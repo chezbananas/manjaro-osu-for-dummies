@@ -70,7 +70,10 @@ cd osu-wine
 sudo ./install.sh
 ```
 - hit yes at any prompts
-`osu-wine`
+```
+osu-wine
+```
+
 - it’s common to have some errors at this point - just click “no” and eventually osu should run
 
 - after osu is working we’ll have to go do the low latency stuff
@@ -120,10 +123,13 @@ nano ~/.osu-wine.conf
 
 ## if those did not help:
 - terminal:
-`nano ~/.osu-wine.conf`
+
+```nano ~/.osu-wine.conf```
+
 - uncomment export STAGING_AUDIO_DURATION and set it to 100000 (one hundred thousand)
 - if it works now, decrease until it’s unstable, then go back to your last stable setting
 - if it doesn’t work, increase until it’s stable
+
 ### “i can’t tell if it’s working or not”
 - if you can’t tell if it’s working, it’s probably not working
 - go back through the instructions again - namely the editing ~/.osu-wine.conf NOT ~/osu-wine/osu-wine.conf
@@ -157,7 +163,9 @@ nano ~/.osu-wine.conf
 # step 8: opentabletdriver
 - [this](https://osu.ppy.sh/community/forums/topics/1340468?n=1) guide is once again Pretty Good
 - terminal:
-`sudo pacman -S dotnet-runtime dotnet-sdk`
+
+```sudo pacman -S dotnet-runtime dotnet-sdk```
+
 - open add/remove software
 ### if you haven’t enabled AUR support, do this:
 - click the top right hamburger menu (three horizontal lines)
