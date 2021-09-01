@@ -79,7 +79,8 @@ osu-wine
 - after osu is working we’ll have to go do the low latency stuff
 
 ## IF YOU HAVE ISSUES WITH 144/240hz (especially with multiple displays) - disable desktop compositing
-- manjaro: search “compositor,” then disable compositor on startup
+- manjaro: search “compositor," which should bring you to system settings
+  - then disable compositor on startup
 
 # step 5: poon’s wine
 ## option 1: guaranteed working as of 8/31/21
