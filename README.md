@@ -225,10 +225,14 @@ chmod +x tablet.sh
 everything should be working at this point, if it doesn’t then look through these three forum posts for additional troubleshooting steps:
 
 also this is a bibliography: 
+
 marshnello guide: https://osu.ppy.sh/community/forums/topics/1248084
+
 osu-wine by forefront: https://osu.ppy.sh/community/forums/topics/794952
+
 OTD guide by iodine: https://osu.ppy.sh/community/forums/topics/1340468  
-https://www.youtube.com/watch?v=ceQZw-Ot9r8 guide on auto mounting HDDs
+
+guide on auto mounting drives: https://www.youtube.com/watch?v=ceQZw-Ot9r8
 
 if it’s still broken then if i know you feel free to ping me and i’ll see what i can do but idk wtf i’m doing tbh i just know this worked for me on 3 different machines
 
