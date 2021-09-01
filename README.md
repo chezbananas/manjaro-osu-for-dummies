@@ -119,7 +119,9 @@ nano ~/.osu-wine.conf
 - type osu-wine in a terminal to start osu, and you should be good to go!
 
 ## if you have no audio: 
-- if you uncommented export STAGING…, nano ~/.osu-wine.conf again and add the # before export again
+- if you uncommented export STAGING… use
+```nano ~/.osu-wine.conf```
+again and add the # before export again
 - try enabling and disabling audio compatibility mode - if audio works after this and is stable, then you’ll just have to do this every time you start osu
 
 ## if those did not help:
