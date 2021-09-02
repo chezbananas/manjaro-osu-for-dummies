@@ -186,8 +186,7 @@ again and add the # before export again
 - enable aur support
 - exit preferences
 
-
-
+####after enabling aur support
 - search for and install opentabletdriver
   - **DO NOT INSTALL** opentabletdriver-git, plugins (smoothing) will not work
 
