@@ -253,6 +253,8 @@ sudo ./gosumemory
 
 - if you set it up properly, then it should detect your songs folder (look at the console's output), otherwise double-check that everything is right
 
+- in the future, to run gosumemory, open a terminal, cd into your gosumemory directory, and then `sudo ./gosumemory`
+
 ## josu-trainer
 
 ### i'm only going to show you the simple idiot way with precompiled binaries, but it might not always be up to date; join poon's discord and look at the pinned messages in #osu-linux for a guide on how to build josu-trainer from scratch
