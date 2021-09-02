@@ -228,7 +228,7 @@ chmod +x tablet.sh
 - extract the zip to wherever you'd like to have gosumemory installed (I have it installed in /home/gosumemory)
 - open terminal:
 ```
-cd (name of your gosumemory directory, by default it's gosumemory_linux_amd64 but i renamed mine to gosumemory)
+cd (your gosumemory directory), for me I type cd gosumemory
 sudo chmod +x gosumemory
 sudo ./gosumemory -path /(YOUR PATH TO YOUR SONGS FOLDER)
 ```
