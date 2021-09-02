@@ -63,6 +63,13 @@ sudo nano ~/.config/pipewire/pipewire-pulse.conf
   - delete the # before pulse.min.quantum, then change the 256 in 256/48000 to a 32
 - save with ctrl+O and then exit with ctrl+x
 - then reboot
+
+- if you have stability issues open a terminal:
+~~~
+sudo nano ~/.config/pipewire/pipewire-pulse.conf
+~~~
+- add the # before pulse.min.req and pulse.min.quantum, and change the 32s back to 256s
+
 # step 4: installing osu
 [this](https://osu.ppy.sh/community/forums/topics/794952?n=1) post is my savior
 - terminal:
