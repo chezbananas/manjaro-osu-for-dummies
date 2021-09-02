@@ -261,7 +261,7 @@ sudo ./gosumemory
 
 - download josu-trainer from [this link](https://www.dropbox.com/s/gpo9sibpo37u5z3/josu.zip?dl=1)
 - extract this into wherever you want josu-trainer to be (for me, i'll use /home/josu)
-- open your file manager and navigate to your josu-trainer folder
+- open your file manager and navigate to wherever you extracted josu-trainer (once again, for me /home/josu) 
   - open the "bin" folder
   - create a new file called "josutrainer-config.properties"
     - edit that file with KATE, and copy paste the following
