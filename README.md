@@ -256,8 +256,8 @@ sudo ./gosumemory -path /(YOUR PATH TO YOUR SONGS FOLDER)
     - on line 3 you should see path = auto; replace auto with the path to your songs directory
       - example: path = /home/(my computer's name)/.local/share/osu-wine/OSU/Songs
   - verify that gosumemory is working by opening a terminal and:
-    - cd into the gosumemory directory
 ```
+cd (your gosumemory directory)
 sudo ./gosumemory
 ```
 
