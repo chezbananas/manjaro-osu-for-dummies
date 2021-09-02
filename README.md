@@ -221,6 +221,66 @@ chmod +x tablet.sh
 ```
 - you should see “blacklist wacom” in the terminal, and your cursor should stop ghosting!
 
+# step 9 gosumemory+josu-trainer
+
+- download [gosumemory](https://github.com/l3lackShark/gosumemory/releases/tag/1.3.3)
+  - download linux amd64 version (assuming you're on 64 bit, otherwise 386)
+- extract the zip to wherever you'd like to have gosumemory installed (I have it installed in /home/gosumemory)
+- open terminal:
+```
+cd (name of your gosumemory directory, by default it's gosumemory_linux_amd64 but i renamed mine to gosumemory)
+sudo chmod +x gosumemory
+sudo ./gosumemory -path /(YOUR PATH TO YOUR SONGS FOLDER)
+```
+  - this should be /home/(YOUR COMPUTER'S NAME)/.local/share/osu-wine/OSU/Songs
+    - alternatively you can navigate to your songs folder in your file explorer, then right click on songs and click "copy location"
+  - remember that you can paste this with ctrl+shift+v
+
+- open a new terminal tab and open osu (osu-wine in terminal)  
+- verify that gosumemory isn't spitting out errors
+
+- to not have to copy paste your path to songs directory every time:
+  - close gosumemory if it's running
+  - open your file explorer and navigate to your gosumemory directory
+  - open config.ini with KATE (or any other text editor)
+    - on line 3 you should see path = auto; replace auto with the path to your songs directory
+      - example: path = /home/(my computer's name)/.local/share/osu-wine/OSU/Songs
+  - verify that gosumemory is working by opening a terminal and:
+    - cd into the gosumemory directory
+```
+sudo ./gosumemory
+```
+
+- if you set it up properly, then it should detect your songs folder (look at the console's output), otherwise double-check that everything is right
+
+## josu-trainer
+
+### i'm only going to show you the simple idiot way with precompiled binaries, but it might not always be up to date; join poon's discord and look at the pinned messages in #osu-linux for a guide on how to build josu-trainer from scratch
+
+- download josu-trainer from [this link](https://www.dropbox.com/s/gpo9sibpo37u5z3/josu.zip?dl=1)
+- extract this into wherever you want josu-trainer to be (for me, i'll use /home/josu)
+- open your file manager and navigate to your josu-trainer folder
+  - open the "bin" folder
+  - create a new file called "josutrainer-config.properties"
+    - edit that file with KATE, and copy paste the following
+```
+	ffmpeg=/usr/bin/ffmpeg
+	generate_empty_osz=true
+	osz_directory= (PATH TO YOUR SONGS FOLDER), e.g. /home/(my computer's name)/.local/share/osu-wine/OSU/Songs
+```
+- save and quit
+- open a terminal:
+```
+cd josu (or wherever you extracted josu-trainer to)
+cd bin
+./josu-trainer
+```
+- and josu-trainer should be up and running! note that you need gosumemory and osu! running as well for it to detect maps properly
+
+**IMPORTANT**
+when using josu-trainer, make sure you rename your difficulties manually **IN** josu-trainer before generating them
+- not doing so will corrupt your map
+
 # Conclusion
 everything should be working at this point, if it doesn’t then look through these three forum posts for additional troubleshooting steps:
 
