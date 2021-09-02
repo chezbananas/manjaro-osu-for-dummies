@@ -37,7 +37,9 @@ sudo pacman -S giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnu
 
 ## installing wine
 
-- on manjaro you can use “add/remove software” - simply search for wine and install that
+- on manjaro you can use the  “add/remove software” application
+  - hit your windows key, search for "add/remove software" and open that
+  - then simply search for wine and install
 - on arch you enable multilib support by editing /etc/pacman.conf, then just sudo pacman -S wine (but if you use arch why are you reading this)
 
 ## installing pipewire
