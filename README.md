@@ -11,17 +11,17 @@ linux is all about choice and flexibility or something - you can use any distro 
 
 - FOR LAPTOP USERS: disable bitlocker if you’re using it
 - then disable secure boot in your UEFI/BIOS, if you don’t know how to do this basically spam F2/Del on your bootup before you get to the scary looking screen, then look for secure boot and disable that
-- step 1: i used KDE, this shouldn’t affect much but KDE is pretty similar to windows so it’s very comfortable
-- step 2: i prefer [rufus](https://rufus.ie/en), but use whatever works
+- notes for step 1: i used KDE, this shouldn’t affect much but KDE is pretty similar to windows so it’s very comfortable
+- notes for step 2: i prefer [rufus](https://rufus.ie/en), but use whatever works
   - make sure you change your boot order in your bios to let your computer boot from USB instead of windows
-- step 3: on newer versions of manjaro, it’ll give you two options: boot with open-source drivers, or boot with proprietary drivers
+- notes for step 3: on newer versions of manjaro, it’ll give you two options: boot with open-source drivers, or boot with proprietary drivers
   -boot with PROPRIETARY drivers for better performance
-- step 4: if you shrunk your partitions in windows properly, you should see “install alongside”
+- notes for step 4: if you shrunk your partitions in windows properly, you should see “install alongside”
   -use this and click on the free space, and manjaro will handle the rest
      - if you don't see 'install alongside': i would recommend going back to windows and trying to fix your partitions again, or you can try setting up your partitions manually through the manjaro installer if you’re comfortable with that (other guides explain how to do this)
 # step 2: housekeeping after a fresh install
 - if after you restart your computer you keep booting to the manjaro installer, turn off your computer, remove the USB stick, and then start it again - you should boot to manjaro now
-after installing manjaro, make sure you’re connected to your network
+- after installing manjaro, make sure you’re connected to your network
 - look in the bottom right - you probably need to update software
 - click through that and install updates, should be pretty straightforward
 - reboot if prompted to
