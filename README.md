@@ -64,11 +64,12 @@ sudo nano ~/.config/pipewire/pipewire-pulse.conf
 - save with ctrl+O and then exit with ctrl+x
 - then reboot
 
-- if you have stability issues open a terminal:
+- if you have audio stability issues open a terminal:
 ~~~
 sudo nano ~/.config/pipewire/pipewire-pulse.conf
 ~~~
 - add the # before pulse.min.req and pulse.min.quantum, and change the 32s back to 256s
+  - if you want to tinker around with it more, don't add the #s and change the 32s to 64s, 128s, etc. until stable
 
 # step 4: installing osu
 [this](https://osu.ppy.sh/community/forums/topics/794952?n=1) post is my savior
@@ -87,7 +88,7 @@ osu-wine
 
 - after osu is working we’ll have to go do the low latency stuff
 
-## IF YOU HAVE ISSUES WITH 144/240hz (especially with multiple displays) - disable desktop compositing
+## IF YOU HAVE ISSUES WITH INPUT LAG OR 144/240hz (especially with multiple displays) - disable desktop compositing
 - manjaro: search “compositor," which should bring you to system settings
   - then disable compositor on startup
 
