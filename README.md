@@ -7,7 +7,7 @@ linux is all about choice and flexibility or something - you can use any distro 
 
 # step 1: install manjaro kde
 
-## follow [this](https://itsfoss.com/install-manjaro-linux/) guide, this is not a manjaro install guide but i left a few notes for each step below
+## follow [this](https://itsfoss.com/install-manjaro-linux/) guide, this is not a manjaro install guide but i left asystemctl --user restart pipewire pipewire-pulse few notes for each step below
 
 - FOR LAPTOP USERS: disable bitlocker if you’re using it
 - then disable secure boot in your UEFI/BIOS, if you don’t know how to do this basically spam F2/Del on your bootup before you get to the scary looking screen, then look for secure boot and disable that
@@ -62,7 +62,11 @@ sudo nano ~/.config/pipewire/pipewire-pulse.conf
 - do the same with #pulse.min.quantum
   - delete the # before pulse.min.quantum, then change the 256 in 256/48000 to a 32
 - save with ctrl+O and then exit with ctrl+x
-- then reboot
+- in terminal:
+```
+systemctl --user restart pipewire pipewire-pulse
+```
+  - if this doesn't work/kills your audio just reboot
 
 - if you have audio stability issues open a terminal:
 ~~~
