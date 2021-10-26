@@ -73,6 +73,9 @@ systemctl --user restart pipewire pipewire-pulse
 sudo nano ~/.config/pipewire/pipewire-pulse.conf
 ~~~
 - add the # before pulse.min.req and pulse.min.quantum, and change the 32s back to 256s
+```
+systemctl --user restart pipewire pipewire-pulse
+```
   - if you want to tinker around with it more, don't add the #s and change the 32s to 64s, 128s, etc. until stable
 
 # step 4: installing osu
