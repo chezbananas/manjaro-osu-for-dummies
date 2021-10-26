@@ -7,7 +7,7 @@ linux is all about choice and flexibility or something - you can use any distro 
 
 # step 1: install manjaro kde
 
-## follow [this](https://itsfoss.com/install-manjaro-linux/) guide, this is not a manjaro install guide but i left asystemctl --user restart pipewire pipewire-pulse few notes for each step below
+## follow [this](https://itsfoss.com/install-manjaro-linux/) guide, this is not a manjaro install guide but i left a few notes for each step below
 
 - FOR LAPTOP USERS: disable bitlocker if you’re using it
 - then disable secure boot in your UEFI/BIOS, if you don’t know how to do this basically spam F2/Del on your bootup before you get to the scary looking screen, then look for secure boot and disable that
