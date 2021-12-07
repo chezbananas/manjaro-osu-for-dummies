@@ -108,7 +108,7 @@ osu-wine
 - open a terminal:
 ```
 cd Downloads
-sudo pacman -U wine-osu-6.14-1-x86_64.tar.zst
+sudo pacman -U wine-osu-6.14-1-x86_64.pkg.tar.zst
 ```
 - change wine-osu-6.14… .tar.zxt for whatever the name of the file you downloaded is (the one above should be right though)
 
@@ -131,24 +131,25 @@ nano ~/.osu-wine.conf
   - **DO NOT EDIT** ~/osu-wine/.osu-wine.conf, this does not work and you will spend a day ripping your hair out trying to figure out why your latency is so high
 - scroll down to “PooN’s wine-osu variables”
 - remove the # before PATH=”/opt/wine-osu/bin:$PATH”
-  - if you want you can remove the # before export STAGING…, but it’ll work without it (i did not remove it, once again for stability purposes)
+  - remove the # before export STAGING… and set it to 50000 (fifty thousand)
 - ctrl O then enter to save, ctrl X to exit
 - type osu-wine in a terminal to start osu, and you should be good to go!
 
+## if your audio is working at this point, you can decrease latency further
+  - close osu
+  - ```nano ~/.osu-wine.conf```
+  - decrease export STAGING to 10000
+  - run osu again (osu-wine in terminal), and see if your audio works
+    - yes? decrease the value until audio stops working
+      - after audio breaks, return to last working value
+    - no? increase until audio works again
+
 ## if you have no audio: 
-- if you uncommented export STAGING… use
-```nano ~/.osu-wine.conf```
-again and add the # before export again
 - try enabling and disabling audio compatibility mode - if audio works after this and is stable, then you’ll just have to do this every time you start osu
-
-## if those did not help:
-- terminal:
-
+- still having issues? do
 ```nano ~/.osu-wine.conf```
-
-- uncomment export STAGING_AUDIO_DURATION and set it to 100000 (one hundred thousand)
-- if it works now, decrease until it’s unstable, then go back to your last stable setting
-- if it doesn’t work, increase until it’s stable
+again and increase export STAGING... until it's stable
+  - if this doesn't work, add a # before the export STAGING line
 
 ### “i can’t tell if it’s working or not”
 - if you can’t tell if it’s working, it’s probably not working
