@@ -179,6 +179,7 @@ again and increase export STAGING... until it's stable
   - alternatively you can use ctrl H
 - drag the folders/files you want to share from your old folder to your new folder, and when the context menu pops up, click “link here”
   - common ones: skins, screenshots, songs, collection.db, osu!.cfg, osu!.db, osu!(your username).cfg, scores.db
+  - alternatively, you can just link the whole osu folder to the new one; you'll probably have to redo settings unless your linux and windows usernames are the same, but this is the easiest solution
 - test by running osu-wine in a terminal - if done properly, you should have your old skins/songs/collections, and you shouldn’t have to recalculate difficulties or anything
 
 # step 8: opentabletdriver
