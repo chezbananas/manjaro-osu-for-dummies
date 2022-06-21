@@ -222,24 +222,12 @@ rm -rf OpenTabletDriver-udev
 - hit the windows/super key and type opentabletdriver, then you can configure your area/settings
 
 ### if you have issues with a “ghost cursor” look at the [OTD wiki](https://github.com/OpenTabletDriver/OpenTabletDriver/wiki/Linux-FAQ)
-- open your file explorer and go to home
-- right click → create new → text file
-  - call it whatever you want, but make sure it ends in sh (i’ll use tablet.sh)
-- you can delete this afterwards so it doesn’t matter
-- open tablet.sh (it shouldn’t execute, but if it does, right click and open with KATE)
-- put this in there:
+- open a terminal
+- run these two commands
 ```
 echo "blacklist wacom" | sudo tee -a /etc/modprobe.d/blacklist.conf
 sudo rmmod wacom
 ```
-- save it
-- open terminal:
-```
-cd
-chmod +x tablet.sh
-./tablet.sh
-```
-- you should see “blacklist wacom” in the terminal, and your cursor should stop ghosting!
 
 # step 9 gosumemory+josu-trainer
 
