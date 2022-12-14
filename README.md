@@ -3,7 +3,7 @@ beginner's guide to low-latency audio on osu! with manjaro KDE
 
 CREDITS BELOW
 
-linux is all about choice and flexibility or something - you can use any distro and all the stuff will work right? unfortunately i am an idiot so i will be the antithesis to that philosophy and give a tutorial for only one distro (manjaro kde)
+linux is all about choice and flexibility or something - you can use any distro and all the stuff will work right? unfortunately linux likes to not work, so I will be the antithesis to that philosophy and give a tutorial for only one distro (manjaro kde)
 
 # step 1: install manjaro kde
 
@@ -303,6 +303,4 @@ osu-wine by forefront: https://osu.ppy.sh/community/forums/topics/794952
 OTD guide by iodine: https://osu.ppy.sh/community/forums/topics/1340468  
 
 guide on auto mounting drives: https://www.youtube.com/watch?v=ceQZw-Ot9r8
-
-if it’s still broken then if i know you feel free to ping me and i’ll see what i can do but idk wtf i’m doing tbh i just know this worked for me on 3 different machines
 
